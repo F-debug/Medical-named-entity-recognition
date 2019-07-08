@@ -7,10 +7,19 @@ data:已标注的医疗数据，O非实体部分,TREATMENT治疗方式, BODY身�
 data_origin:项目提供的医疗数据，需要转化为目标序列标记集合  
 transfer_data:目标序列化脚本  
 model：训练模型需要的字向量  
-| 水果        | 价格    |  数量  |  
-| --------   | -----:  | :----: |  
-| 香蕉        | $1      |   5    |  
-| 苹果        | $1      |   6    |  
-| 草莓        | $1      |   7    |  
+<table>
+    <tr>
+        <th>训练集1</th>
+        <th>测试集</th>
+        <th>训练集准确率</th>
+        <th>测试集准确率</th>
+    </tr>
+    <tr align="center">
+        <td>6268</td>
+        <td>1571</td>
+        <td>0.965</td>
+        <td>0.845</td>
+    </tr>
+</table>    
  lstm_predict.py:对训练好的实体识别模型进行测试  
  
